@@ -87,6 +87,9 @@ button.green {
 
 body {
   width: 100%;
+  background-color: #cbc9c9;
+  max-width: 1320px;
+  margin: 0 auto;
 }
 
 /* Header Styling */
@@ -95,7 +98,7 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 20px 80px;
-    background: #E3E6F3;
+    background: #cbc9c9;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
     z-index: 999;
     position: sticky;
@@ -140,7 +143,7 @@ body {
 }
 
 #hero {
-    background-image: url(img/hero4.png);
+    /* background-image: url(img/hero4.jpg); */
     height: 90vh;
     width: 100%;
     background-size: cover;
@@ -150,6 +153,33 @@ body {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+    position: relative;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  padding: 50px;
+  color: white;
+  text-align: center;
+}
+
+.slideshow-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.slideshow-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
 }
 
 #hero h4 {
@@ -160,7 +190,7 @@ body {
     color: #088178;
 }
 
-#hero button {
+#hero a {
     background-image: url(img/button.png);
     background-color: transparent;
     color:#088178;
@@ -168,7 +198,8 @@ body {
     padding: 14px 80px 14px 65px;
     background-repeat: no-repeat;
     font-weight: 700;
-    font-size: 15px;
+    font-size: 20px;
+    text-decoration: none;
 }
 
 #feature {
@@ -186,6 +217,7 @@ body {
   border: 1px solid #cce7d0;
   border-radius: 4px;
   margin: 15px 0;
+  background-color: #fff;
 }
 
 #feature .fe-box:hover {
@@ -241,13 +273,14 @@ feature .fe-box img {
   width: 23%;
   min-width: 250px;
   padding: 10px 12px;
-  border: 1px solid #cce7d0;
+  /* border: 1px solid #cce7d0; */
   border-radius: 25px;
   cursor: pointer;
   box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
   margin: 15px 0;
   transition: 0.2s ease;
   position: relative;
+  background-color: #fff
 }
 
 #product1 .pro img{
@@ -473,6 +506,23 @@ footer a {
   /* margin-bottom: 10px; */
 }
 
+footer a:hover {
+  color: red;
+}
+
+footer a:active {
+  color: green;
+}
+
+footer a:visited {
+  color: purple;
+}
+
+footer a:visited:hover {
+  color: rgb(241, 29, 32);
+}
+
+
 /* Shop Page  */
 
 #page-header {
@@ -672,3 +722,115 @@ footer a {
   height: 100%;
   border-radius: 20px;
 }
+
+/* Contact Page  */
+
+#page-header.contact-header {
+  background-image: url(img/about/banner.png);
+}
+
+#contact-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#contact-details .details {
+  width: 40%;
+}
+
+#contact-details .details span,
+#form-details form span {
+  font-size: 12px;
+}
+
+#contact-details .details h2,
+#form-details form h2 {
+  font-size: 26px;
+  line-height: 35px;
+  padding: 20px 0px;
+}
+
+#contact-details .details h3 {
+  font-size: 16px;
+  padding-bottom: 15px;
+}
+
+#contact-details .details li {
+  list-style: none;
+  display: flex;
+  padding: 10px 0;
+}
+
+#contact-details .details li i {
+  font-size: 14px;
+  padding-right: 22px;
+}
+
+#contact-details .details li p {
+  margin: 0;
+  font-size: 14px;
+}
+
+#contact-details .map {
+  width: 55%;
+  height: 400px;
+}
+
+#contact-details .map iframe{
+  width: 100%;
+  height: 100%; 
+}
+
+#form-details form {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#form-details form input,
+#form-details form textarea {
+  width: 100%;
+  padding: 12px 15px;
+  outline: none;
+  margin-bottom: 20px;
+  border: 1px solid #e1e1e1;
+}
+
+#form-details form button {
+  background-color: #088178;
+  border-radius: 4px;
+}
+
+.form-content {
+  width: 70%;
+  /* padding: 20px; */
+}
+
+.people-column {
+  width: 300px;
+}
+
+table {
+  padding-left: 50px;
+  padding-right: 16px;
+}
+
+table td {
+  vertical-align: middle;
+  width: 50%;
+  padding: 12px 15px;
+}
+
+table td .form-content {
+  vertical-align: middle;
+  width: 70px;
+  padding: 12px 15px;
+}
+
+
+
+
+
+

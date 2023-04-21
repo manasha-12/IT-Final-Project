@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cara Shopping</title>
+    <title>My Store</title>
 
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
@@ -12,7 +12,7 @@
 </head>
 <body>
     <section id="header">
-        <a href="#"><img src="img/logo.png" alt="logo here" class="logo"></a>
+        <a href="#"><img src="img/logo1.png" alt="logo here" class="logo"></a>
 
         <div>
             <ul id="navbar">
@@ -21,17 +21,26 @@
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a href="cart.html"><i class="far fa-shopping-bag"></i></a></li>
+                <li><a href="gallery.html">Gallery</a></li>
             </ul>
         </div>
     </section>
     
     <section id="hero">
-        <h4>Trade-in-offer</h4>
-        <h2>Supper value deal</h2>
-        <h1>On all products</h1>
-        <p>Save more with cupouns and upto 50% off!</p>
-        <button>Shop Now</button>
+        <div class="slideshow-container">
+            <img class="slideshow-image" src="img/hero4.jpg" alt="Slider 1">
+            <img class="slideshow-image" src="img/hero5.jpg" alt="Slider 2">
+            <img class="slideshow-image" src="img/hero6.jpg" alt="Slider 3">
+            <img class="slideshow-image" src="img/hero7.jpg" alt="Slider 4">
+            <img class="slideshow-image" src="img/hero5.jpg" alt="Slider 5">
+        </div>
+        <div class="hero-content">
+            <h4>Trade-in-offer</h4>
+            <h2>Supper value deal</h2>
+            <h1>On all products</h1>
+            <p>Save more with cupouns and upto 50% off!</p>
+            <a href="http://newwindow.html" TARGET="_blank">Shop Now</a>
+        </div>
     </section>
     
     <section id="feature" class="section-p1">
@@ -416,5 +425,7 @@
     </footer>
 
     <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="slider.js"></script>
 </body>
 </html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Store</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+
+</head>
+<body>
+    <section id="header">
+        <a href="#"><img src="img/logo1.png" alt="logo here" class="logo"></a>
+
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="page-header" class="contact-header">
+        <h2>#let's_connect</h2>
+        <p>Conact us!</p>
+    </section>
+
+    <section id="contact-details" class="section-p1">
+        <div class="details">
+            <span>GET IN TOUCH</span>
+            <h2>Visit one of our agency location or contact us today</h2>
+            <h3>Head Office</h3>
+            <div>
+                <li>
+                    <i class="fal fa-map"></i>
+                    <p>Pulchock, Lalitpur, Nepal</p>
+                </li>
+                <li>
+                    <i class="fal fa-envelope"></i>
+                    <p>contactus@mystore.com</p>
+                </li>
+                <li>
+                    <i class="fal fa-phone-alt"></i>
+                    <p>9876543210</p>
+                </li>
+                <li>
+                    <i class="fal fa-clock"></i>
+                    <p>Monday to Saturday: 9:00 am to 5:00 pm</p>
+                </li>
+            </div>
+        </div>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3533.2768915613324!2d85.31661549999995!3d27.677835700000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19cbbeac9357%3A0x8f35a679609cb5b9!2sPulchowk%2C%20Lalitpur%2044600!5e0!3m2!1sen!2snp!4v1682048973479!5m2!1sen!2snp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+    <!-- <section id="form-details">
+        <form id="contact-form" action="">
+            <span>LEAVE A MESSAGE</span>
+            <h2>We love to hear from you</h2>
+            <input type="text" placeholder="Your Name" name="name">
+            <input type="text" placeholder="Your E-mail" name="email">
+            <input type="text" placeholder="Subject" name="subject">
+            <textarea name="message" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <button class="normal" type="submit">Submit</button>
+          </form>
+          <div id="success-message" style="display:none">Thank you for your message!</div>
+        <div class="people">
+            <div>
+                <img src="img/people/1.png" alt="image here">
+                <p><span>Shyam Maharjan</span>Senior Manager<br> Phone: +977 9876543212 <br> Email: shayam22@myshop.com</p>
+            </div>
+            <div>
+                <img src="img/people/2.png" alt="image here">
+                <p><span>Ram Shakya</span>Senior Marketing Manager<br> Phone: +977 9876543212 <br> Email: ram22@myshop.com</p>
+            </div>
+            <div>
+                <img src="img/people/3.png" alt="image here">
+                <p><span>Radha Poudyal</span>Senior Manager<br> Phone: +977 9876543212 <br> Email: radha22@myshop.com</p>
+            </div>
+        </div>
+    </section> -->
+
+    <section id="form-details">
+        <table>
+          <tr>
+            <td colspan="2" class="form-content">
+              <form id="contact-form" action="">
+                <span>LEAVE A MESSAGE</span>
+                <h2>We love to hear from you</h2>
+                <input type="text" placeholder="Your Name" name="name">
+                <input type="text" placeholder="Your E-mail" name="email">
+                <input type="text" placeholder="Subject" name="subject">
+                <textarea name="message" cols="30" rows="10" placeholder="Your Message"></textarea>
+                <button class="normal" type="submit">Submit</button>
+              </form>
+              <div id="success-message" style="display:none">Thank you for your message!</div>
+            </td>
+            <td class="people-column">
+              <div class="people">
+                <table>
+                  <tr>
+                    <td>
+                      <img src="img/people/1.png" alt="image here">
+                    </td>
+                    <td>
+                      <p><span>Shyam Maharjan</span><br>Senior Manager<br> Phone: +977 9876543212 <br> Email: shayam22@myshop.com</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img src="img/people/2.png" alt="image here">
+                    </td>
+                    <td>
+                      <p><span>Ram Shakya</span><br>Senior Marketing Manager<br> Phone: +977 9876543212 <br> Email: ram22@myshop.com</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img src="img/people/3.png" alt="image here">
+                    </td>
+                    <td>
+                      <p><span>Radha Poudyal</span><br>Senior Manager<br> Phone: +977 9876543212 <br> Email: radha22@myshop.com</p>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </td>
+          </tr>
+        </table>
+
+      </section>
+      
+      
+    <script src="validate-form.js"></script>
+
+    <section id="newsletter" class="section-p1 section-m1">
+        <div class="news-text">
+            <h4>Sign Up For Newsletter</h4>
+            <p>Get E-mail updates about our latest shop and <span>special offers.</span></p>
+            <p>Have any Inquires - <a href="mailto:example@example.com">Send Email</a></p>
+        </div>
+        <div class="form">
+            <input type="text" placeholder="your email address">
+            <button class="normal">Sign Up</button>
+        </div>
+    </section>
+
+    <footer class="section-p1">
+        <div class="column">
+            <img class="logo" src="img/logo.png" alt="logo here">
+            <h4>Contact</h4>
+            <p><strong>Address</strong>: Lalitpur,Bagmati, Nepal</p>
+            <p><strong>Phone</strong>: +977 9876543210</p>
+            <p><strong>Open Hours</strong>: 10:00 - 18:00, Mon - Sat</p>
+            <div class="follow">
+                <h4>Follow Us</h4>
+                <div class="icons">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-pinterest-p"></i>
+                    <i class="fab fa-youtube"></i>
+                    <i class="fab fa-twitter"></i>
+                </div>    
+            </div>
+        </div>
+        <div class="column">
+            <h4>About</h4>
+            <a href="about.html">About Us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Trems & Conditions</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <div class="column">
+            <h4>My Account</h4>
+            <a href="#">Sign In</a>
+            <a href="#">Wish Cart</a>
+            <a href="#">Track My Order</a>
+            <a href="#">Help</a>
+            <h4>Navigate</h4>
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="column">
+            <h4>Explore Fashion</h4>
+            <a href=" https://www.vogue.com/">Vogue</a>
+            <a href=" https://www.gq.com/">GQ</a>
+            <a href=" https://www.harpersbazaar.com/">Harper's Bazaar</a>
+            <a href=" https://www.refinery29.com/">Refinery29</a>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023, All Rights Reserved By The Company </p>
+        </div>
+    </footer>
